@@ -12,10 +12,6 @@ const App: React.FC = () => {
       canvas.id = 'bg';
       document.body.appendChild(canvas);
   
-      // Texture loader
-      const loader = new THREE.TextureLoader();
-      const cross = loader.load('/src/assets/cross.png');
-  
       // Sizes
       const sizes = {
         width: window.innerWidth,
@@ -58,49 +54,16 @@ const App: React.FC = () => {
       const material = new THREE.PointsMaterial({ size: 0.005 });
       const torus = new THREE.Points(geometry, material);
   
-      // Particles
-      const particleGeometry = new THREE.BufferGeometry();
-      const particleCount = 5000;
-      const posArray = new Float32Array(particleCount * 3);
-      for (let i = 0; i < particleCount * 3; i++) {
-        posArray[i] = (Math.random() - 0.5) * (Math.random() - 5);
-      }
-  
-      particleGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-  
-      const particleMaterial = new THREE.PointsMaterial({
-        size: 0.01,
-        map: cross,
-        transparent: true,
-      });
-  
-      const particleMesh = new THREE.Points(particleGeometry, particleMaterial);
-      scene.add(torus, particleMesh);
+      scene.add(torus );
   
       // Clock for animation
       const clock = new THREE.Clock();
-  
-      let mouseX = 0;
-      let mouseY = 0;
-  
-      const animateParticles = (event: MouseEvent) => {
-        mouseY = event.clientY;
-        mouseX = event.clientX;
-      };
-  
-      document.addEventListener('mousemove', animateParticles);
   
       const animate = () => {
         const elapsedTime = clock.getElapsedTime();
   
         // Object rotation
         torus.rotation.y = 0.5 * elapsedTime;
-        particleMesh.rotation.y = -0.01 * elapsedTime;
-  
-        if (mouseX > 0) {
-          particleMesh.rotation.x = -mouseY * (elapsedTime * 0.00008);
-          particleMesh.rotation.y = -mouseX * (elapsedTime * 0.00008);
-        }
   
         // Render
         renderer.render(scene, camera);
@@ -113,7 +76,6 @@ const App: React.FC = () => {
       // Cleanup function
       return () => {
         window.removeEventListener('resize', onResize);
-        document.removeEventListener('mousemove', animateParticles);
         renderer.dispose();
         document.body.removeChild(canvas);
       };
