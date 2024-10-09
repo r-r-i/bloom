@@ -11,6 +11,15 @@ html, body {
   color: black;
 }
 
+.enter {
+  cursor: pointer;
+  width: 60px;
+}
+
+.enter:hover {
+  color: #3d898d;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -42,12 +51,12 @@ h1 {
   text-align: right;
 }
 
-h1, p {
+h1, .pdiv {
   flex-basis: 0;
   flex-grow: 1;
 }
 
-p {
+.pdiv {
   font-size: 1.3rem;
   width: 40vw;
 }
