@@ -3,9 +3,11 @@ import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Html } from '@react-three/drei';
 import { useNavigate } from 'react-router-dom';
-import ParticleSphere from './particleSphere';
-import './sphere.css'
+// Models
 // Components
+import ParticleSphere from './sphereLogic';
+// CSS
+import './sphere.css'
 // Services
 
 const RotatingParticleSphere: React.FC = () => {

@@ -1,8 +1,10 @@
 // Modules
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Points } from 'three';
+// Models
 // Components
+// CSS
 // Services
 
 const ParticleSphere: React.FC = () => {

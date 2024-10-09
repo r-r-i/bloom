@@ -1,6 +1,8 @@
 // Modules
+// Models
 // Components
-import RotatingParticleSphere from '../particleSphere/rotatingSphere'
+import RotatingParticleSphere from '../particleSphere/sphereRender'
+// CSS
 // Services
 
 export default function Home() {
