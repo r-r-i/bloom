@@ -1,9 +1,7 @@
 // Modules
 import React, { useRef, useEffect, useState } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Html, Text } from '@react-three/drei';
-import { Points, PointsMaterial, BufferGeometry } from 'three';
-import { useNavigate } from 'react-router-dom';
+import { useFrame } from '@react-three/fiber';
+import { Points } from 'three';
 // Components
 // Services
 

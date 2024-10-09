@@ -1,5 +1,4 @@
 // Modules
-import * as THREE from 'three'
 // Components
 import RotatingParticleSphere from '../particleSphere/rotatingSphere'
 // Services

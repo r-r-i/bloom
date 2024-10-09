@@ -1,5 +1,4 @@
 // Modules
-import React from 'react';
 // Components
 // Services
 

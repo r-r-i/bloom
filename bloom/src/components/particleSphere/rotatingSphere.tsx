@@ -1,9 +1,11 @@
+// Modules
 import React, { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Html } from '@react-three/drei';
 import { useNavigate } from 'react-router-dom';
 import ParticleSphere from './particleSphere';
-
+// Components
+// Services
 const RotatingParticleSphere: React.FC = () => {
   const navigate = useNavigate(); 
   const [isHovered, setIsHovered] = useState(false);
@@ -19,7 +21,7 @@ const RotatingParticleSphere: React.FC = () => {
       <ParticleSphere />
       <OrbitControls />
 
-      <Html position={[-3, 0.3, 0]} style={{ pointerEvents: 'auto' }}>
+      <Html position={[-3, 0.4, 0]} style={{ pointerEvents: 'auto' }}>
         <div style={{ color: '#e2dddf', fontSize: '3em', fontFamily: 'Poppins' }}>bloom</div>
         <span 
           onClick={handleClick}
