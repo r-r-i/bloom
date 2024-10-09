@@ -1,5 +1,5 @@
 // Modules
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Points } from 'three';
 // Components
@@ -7,54 +7,41 @@ import { Points } from 'three';
 
 const ParticleSphere: React.FC = () => {
   const pointsRef = useRef<Points>(null);
-  const [positions, setPositions] = useState<Float32Array>(new Float32Array(0));
-  const [initialPositions, setInitialPositions] = useState<Float32Array>(new Float32Array(0));
 
   const radius = 1;
   const particles = 2000;
+  
+  const spherePositions = new Float32Array(particles * 3); // final positions (on the sphere)
+  const startPositions = new Float32Array(particles * 3);  // initial random positions
 
-  useEffect(() => {
-    const spherePositions = new Float32Array(particles * 3); // final positions (on the sphere)
-    const startPositions = new Float32Array(particles * 3); // initial random positions
+  for (let i = 0; i < particles; i++) {
+    const phi = Math.acos(2 * Math.random() - 1);
+    const theta = 2 * Math.PI * Math.random();
 
-    for (let i = 0; i < particles; i++) {
-      // coords for the target sphere shape
-      const phi = Math.acos(2 * Math.random() - 1);
-      const theta = 2 * Math.PI * Math.random();
+    spherePositions[i * 3] = radius * Math.sin(phi) * Math.cos(theta); // x
+    spherePositions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta); // y
+    spherePositions[i * 3 + 2] = radius * Math.cos(phi); // z
 
-      // final positions (on sphere)
-      spherePositions[i * 3] = radius * Math.sin(phi) * Math.cos(theta); // x
-      spherePositions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta); // y
-      spherePositions[i * 3 + 2] = radius * Math.cos(phi); // z
-
-      // random initial positions ( XYZ )
-      startPositions[i * 3] = (Math.random() - 0.5) * 5;
-      startPositions[i * 3 + 1] = (Math.random() - 0.5) * 5;
-      startPositions[i * 3 + 2] = (Math.random() - 0.5) * 5;
-    }
-
-    setPositions(spherePositions); // final sphere positions
-    setInitialPositions(startPositions); // random starting positions
-  }, [particles]);
+    startPositions[i * 3] = (Math.random() - 0.5) * 5;
+    startPositions[i * 3 + 1] = (Math.random() - 0.5) * 5;
+    startPositions[i * 3 + 2] = (Math.random() - 0.5) * 5;
+  }
 
   // interpolation
   const lerp = (start: number, end: number, t: number) => start + (end - start) * t;
 
   useFrame(({ clock }) => {
-    if (pointsRef.current && initialPositions.length > 0) {
+    if (pointsRef.current) {
       const time = clock.getElapsedTime();
       const t = Math.min(time / 100, 1); // speed of transition
 
       const currentPositions = pointsRef.current.geometry.attributes.position.array as Float32Array;
 
       for (let i = 0; i < particles * 3; i++) {
-        // interpolate between initial random position and final sphere position
-        currentPositions[i] = lerp(initialPositions[i], positions[i], t);
+        currentPositions[i] = lerp(startPositions[i], spherePositions[i], t);
       }
 
-      pointsRef.current.geometry.attributes.position.needsUpdate = true; // inform three of position updates
-
-      // sphere rotation
+      pointsRef.current.geometry.attributes.position.needsUpdate = true; // update positions
       pointsRef.current.rotation.y += 0.008;
       pointsRef.current.rotation.x += 0.005;
     }
@@ -65,8 +52,8 @@ const ParticleSphere: React.FC = () => {
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
-          array={initialPositions} // start with random particle positions
-          count={initialPositions.length / 3}
+          array={startPositions} // start with random particle positions
+          count={startPositions.length / 3}
           itemSize={3}
         />
       </bufferGeometry>

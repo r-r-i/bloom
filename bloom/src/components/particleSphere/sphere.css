@@ -1,0 +1,17 @@
+.bloom-text {
+    color: #e2dddf;
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .enter-text {
+    color: #e2dddf;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .enter-text:hover {
+    color: #85ebd9;
+  }
