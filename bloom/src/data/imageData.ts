@@ -1,23 +1,5 @@
 export const imageData = [
     {
-        id: 477,
-        url: '/assets/images/477.jpg',
-        alt: 'missing image',
-        description: ''
-    },
-    {
-        id: 478,
-        url: '/assets/images/478.jpg',
-        alt: 'missing image',
-        description: ''
-    },
-    {
-        id: 479,
-        url: '/assets/images/479.png',
-        alt: 'missing image',
-        description: ''
-    },
-    {
         id: 480,
         url: '/assets/images/480.jpg',
         alt: 'missing image',
