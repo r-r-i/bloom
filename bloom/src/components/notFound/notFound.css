@@ -1,0 +1,28 @@
+.notfound-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  color: #e2dddf;
+  text-align: center;
+}
+
+.notfound-404 {
+  font-size: 10rem;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.home-link {
+  font-size: 1.5rem;
+  color: #e2dddf;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.home-link:hover {
+  color: #85ebd9;
+}
