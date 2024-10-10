@@ -1,8 +1,11 @@
 # bloom
+    #b0acb0
+    #e2dddf 
+    #85ebd9 
+    #3d898d 
+    #2f404d 
 
-colors
-    #b0acb0 gray
-    #e2dddf light gray
-    #85ebd9 cyan
-    #3d898d blue gray
-    #2f404d dark blue gray
+    git clone <>
+    cd bloom
+    npm i
+    npm run dev
