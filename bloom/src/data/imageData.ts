@@ -1,5 +1,47 @@
 export const imageData = [
     {
+        id: 473,
+        url: '/assets/images/473.jpg',
+        alt: 'missing image',
+        description: 'Wicked City (1987) by Madhouse'
+    },
+    {
+        id: 474,
+        url: '/assets/images/474.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 475,
+        url: '/assets/images/475.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 476,
+        url: '/assets/images/476.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 477,
+        url: '/assets/images/477.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 478,
+        url: '/assets/images/478.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 479,
+        url: 'https://64.media.tumblr.com/4ac24ed7fd7079621779acca1b143fe8/b5cd6e48203a83c1-98/s500x750/ef558a6923ab72338916df0c2770886490283982.gif',
+        alt: 'missing image',
+        description: ''
+    },
+    {
         id: 480,
         url: '/assets/images/480.jpg',
         alt: 'missing image',
@@ -33,7 +75,7 @@ export const imageData = [
         id: 485,
         url: '/assets/images/485.jpg',
         alt: 'missing image',
-        description: 'Vagabond (1998 - 2015)'
+        description: 'Vagabond (1998 - 2015) by Takehiko Inoue'
     },
     {
         id: 486,
@@ -43,7 +85,7 @@ export const imageData = [
     },
     {
         id: 487,
-        url: '/assets/images/487.png',
+        url: '/assets/images/487.jpg',
         alt: 'missing image',
         description: ''
     },
@@ -53,9 +95,51 @@ export const imageData = [
         alt: 'missing image',
         description: ''
     },
-    {
+    { // real 489
         id: 489,
         url: '/assets/images/489.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 489,
+        url: '/assets/images/vagabond.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 489,
+        url: '/assets/images/vagabond1.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 489,
+        url: '/assets/images/vagabond2.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 489,
+        url: '/assets/images/vagabond3.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 489,
+        url: '/assets/images/vagabond4.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 489,
+        url: '/assets/images/vagabond5.jpg',
+        alt: 'missing image',
+        description: ''
+    },
+    {
+        id: 489,
+        url: '/assets/images/vagabond6.jpg',
         alt: 'missing image',
         description: ''
     },
