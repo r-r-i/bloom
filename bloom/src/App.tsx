@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home/home';
 import View from './components/view/view';
 import Enso from './components/enso/enso.tsx';
-import RichterCurve from './components/richterSphere/richterCurve.tsx';
+import RichterCurve from './components/richterCurve/richterCurve.tsx';
 import NotFound404 from './components/notFound/notFound';
 // CSS
 // Services
