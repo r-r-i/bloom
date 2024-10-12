@@ -102,43 +102,43 @@ export const imageData = [
         description: ''
     },
     {
-        id: 489,
+        id: 507,
         url: '/assets/images/vagabond.jpg',
         alt: 'missing image',
         description: ''
     },
     {
-        id: 489,
+        id: 506,
         url: '/assets/images/vagabond1.jpg',
         alt: 'missing image',
         description: ''
     },
     {
-        id: 489,
+        id: 505,
         url: '/assets/images/vagabond2.jpg',
         alt: 'missing image',
         description: ''
     },
     {
-        id: 489,
+        id: 504,
         url: '/assets/images/vagabond3.jpg',
         alt: 'missing image',
         description: ''
     },
     {
-        id: 489,
+        id: 503,
         url: '/assets/images/vagabond4.jpg',
         alt: 'missing image',
         description: ''
     },
     {
-        id: 489,
+        id: 502,
         url: '/assets/images/vagabond5.jpg',
         alt: 'missing image',
         description: ''
     },
     {
-        id: 489,
+        id: 501,
         url: '/assets/images/vagabond6.jpg',
         alt: 'missing image',
         description: ''
