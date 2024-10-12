@@ -11,8 +11,8 @@ const ImageGallery: React.FC = () => {
     <div className="page-container">
       <div className="sidebar">
         <ul className="link-list">
-          <li><a href="/particle-sim/blanket">blanket</a></li>
-          <li><a href="/particle-sim/richter-sphere">richter sphere</a></li>
+          <li><a href="/particle-sim/enso">enso</a></li>
+          <li><a href="/particle-sim/richter-curve">richter curve</a></li>
         </ul>
       </div>
       <div className="gallery">

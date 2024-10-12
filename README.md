@@ -11,5 +11,5 @@
     npm run dev
 
     particle sims:
-        . blanket
-        . richter sphere
+        . enso
+        . richter curve
