@@ -1,41 +1,76 @@
 body {
-    background-color: black; 
-    color: white; 
-    font-family: 'Poppins';
-  }
-  
-  .gallery {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    padding: 20px;
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
-  
-  .image-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px 0;
-    max-width: 800px;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .image {
-    width: 500px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .description {
-    margin-left: 20px;
-    font-size: 0.9em;
-    color: #fff; 
-    max-width: 250px;
-    word-wrap: break-word;
-    overflow-wrap: break-word; 
-    flex: 1;
-  }
-  
+  background-color: black; 
+  color: white; 
+  font-family: 'Poppins';
+}
+
+.page-container {
+  display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 50px; 
+  left: 0;
+  width: 150px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.link-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.link-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  margin-left: 180px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 20px;
+  width: calc(100vw - 180px);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  max-width: 800px;
+  width: 100%;
+}
+
+.image {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description {
+  margin-left: 20px;
+  font-size: 0.9em;
+  color: #fff;
+  max-width: 250px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-width: 250px;
+}

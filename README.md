@@ -9,3 +9,7 @@
     cd bloom
     npm i
     npm run dev
+
+    particle sims:
+        . blanket
+        . richter sphere
