@@ -11,5 +11,5 @@
     npm run dev
 
     particle sims:
-        . enso
+        . combat medic
         . richter curve
