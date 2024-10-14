@@ -1,0 +1,311 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 13759,
+      "max": [
+        202.20346069335938,
+        301.4252624511719,
+        71.9084243774414
+      ],
+      "min": [
+        -202.20346069335938,
+        -497.052490234375,
+        -109.46979522705078
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 165108,
+      "componentType": 5126,
+      "count": 13759,
+      "max": [
+        0.9999911785125732,
+        0.9999769330024719,
+        0.9999870657920837
+      ],
+      "min": [
+        -0.9999911785125732,
+        -0.9999933838844299,
+        -0.9999814629554749
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 13759,
+      "max": [
+        0.9999999403953552,
+        0.9999139904975891
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 45900,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 330216,
+      "componentType": 5126,
+      "count": 1348,
+      "max": [
+        53.62626266479492,
+        249.56613159179688,
+        70.69075775146484
+      ],
+      "min": [
+        -22.324758529663086,
+        -57.8087158203125,
+        20.529361724853516
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 346392,
+      "componentType": 5126,
+      "count": 1348,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 110072,
+      "componentType": 5126,
+      "count": 1348,
+      "max": [
+        1.0,
+        0.9859208464622498
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 183600,
+      "componentType": 5125,
+      "count": 6480,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Ilya.Anchouz.Danilov (https://sketchfab.com/Ilya.Anchouz.Danilov)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/police-girl-cyberpunk-free-5177bbbf25d54ef8bf88fd17af501f93",
+      "title": "Police Girl Cyberpunk free"
+    },
+    "generator": "Sketchfab-13.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 209520,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 120856,
+      "byteOffset": 209520,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 362568,
+      "byteOffset": 330376,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 692944,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Spray_Material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.650668649656837,
+          0.650668649656837,
+          0.650668649656837,
+          1.0
+        ]
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Radio_Material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.112564,
+          0.273828,
+          0.237038,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9419747636099487
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Main Body Retopo_Spray Material_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Main Body Retopo_Radio Material_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "231af83d66f2472084c650b9f3516556.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -4.6193599700927734e-05,
+        466.5122985839844,
+        -60.663997650146484,
+        1.0
+      ],
+      "name": "Main Body Retopo"
+    },
+    {
+      "mesh": 0,
+      "name": "Main Body Retopo_Spray Material_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Main Body Retopo_Radio Material_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
