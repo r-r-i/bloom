@@ -1,6 +1,6 @@
 # bloom
 
-bloom is an image viewer first. i'm just uploading images and gifs i like while developing my skills with React. having fun experimenting
+bloom is an image viewer first. i'm just uploading images and gifs i like while developing my front-end skills. having fun experimenting
 with Three.js and GLSL. using react-three/fiber with helpers from react-three/drei.
 
 ## usage
@@ -12,9 +12,8 @@ npm run dev
 ```
 
 ## components (so far)
-
 particle simulations
-  - landing page
+  - particle sphere
   - audio visualisation
 
 gltf conversions
@@ -22,5 +21,9 @@ gltf conversions
 
 ## global colors
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#b0acb0](https://placehold.co/15x15/b0acb0/b0acb0.png) `#b0acb0`
+- ![#e2dddf](https://placehold.co/15x15/e2dddf/e2dddf.png) `#e2dddf`
+- ![#85ebd9](https://placehold.co/15x15/85ebd9/85ebd9.png) `#85ebd9`
+- ![#3d898d](https://placehold.co/15x15/3d898d/3d898d.png) `#3d898d`
+- ![#2f404d](https://placehold.co/15x15/2f404d/2f404d.png) `#2f404d`
 
