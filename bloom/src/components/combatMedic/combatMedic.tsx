@@ -24,7 +24,7 @@ const CombatMedic: React.FC = () => {
 
         <div className="text-overlay">
                 <div className="text-line">Combat Medic</div>
-                <div className="text-line">gltf 3D model</div>
+                <div className="text-line">gltf conversion</div>
         </div>
         </>
     );

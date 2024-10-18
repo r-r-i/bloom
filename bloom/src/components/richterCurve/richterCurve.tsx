@@ -147,6 +147,8 @@ const RichterCurveRender: React.FC = () => {
                 <div className="text-line">Spring 1</div>
                 <div className="text-line">Recomposed: Vivaldi's Four Seasons</div>
                 <div className="text-line">Max Richter</div>
+                <br></br>
+                <div style={{color: '#41fa00'}} className="text-line">orbit controls</div>
             </div>
         </>
     );
