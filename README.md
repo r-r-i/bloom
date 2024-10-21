@@ -14,10 +14,11 @@ npm run dev
 ## components (so far)
 particle simulations
   - particle sphere
-  - audio visualisation
+  - richter curve
 
 gltf conversions
-- 3D model w/ moving pointLight
+- astartes
+- combat medic
 
 ## global colors
 
