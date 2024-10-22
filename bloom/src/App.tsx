@@ -7,6 +7,7 @@ import View from './components/view/view';
 import CombatMedic from './components/combatMedic/combatMedic.tsx';
 import RichterCurve from './components/richterCurve/richterCurve.tsx';
 import Astartes from './components/astartes/astartes.tsx';
+import SigmarLied from './components/sigmarLied/sigmarLied.tsx'
 import NotFound404 from './components/notFound/notFound';
 // CSS
 // Services
@@ -20,6 +21,7 @@ function App() {
         <Route path="/combat-medic" element={<CombatMedic />} />
         <Route path="/richter-curve" element={<RichterCurve />} />
         <Route path="/astartes" element={<Astartes />} />
+        <Route path="/sigmar-lied" element={<SigmarLied />} />
         <Route path='*' element={<NotFound404 />} />
       </Routes>
     </Router>

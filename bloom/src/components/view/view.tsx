@@ -14,6 +14,7 @@ const ImageGallery: React.FC = () => {
           <li><a href="/astartes">astartes</a></li>
           <li><a href="/combat-medic">combat medic</a></li>
           <li><a href="/richter-curve">richter curve</a></li>
+          <li><a href="/sigmar-lied">sigmar lied</a></li>
         </ul>
       </div>
       <div className="gallery">
