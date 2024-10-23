@@ -1,3 +1,10 @@
+///////////////////////////////////////////////////////////////
+///// WRITING CREDIT                                        ///
+///// Age of Sigmar Cinematic Trailer                       ///
+///// by Warhammer                                          ///
+///// youtube: https://www.youtube.com/watch?v=TGF9qLmy1wU  ///
+///////////////////////////////////////////////////////////////
+
 // Modules
 import React from 'react';
 // Models
@@ -9,8 +16,7 @@ import './sigmarLied.css'
 const SigmarLied: React.FC = () => {
     return (
         <>
-            <div className='lightning'></div>
-            <div className='rain'></div>
+            <div className='stormcast'></div>
             <div className='text-block1'>
                 Sigmar lied. Sigmar told us we were chosen. Warriors, stolen from death to be reforged as 
                 his weapons. The immortal sons and daughters of the Storm god.

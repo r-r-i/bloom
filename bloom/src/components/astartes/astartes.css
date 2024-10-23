@@ -1,19 +1,25 @@
-.canvas {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-}
-
 .centered-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #b0acb0;
+    color: #fff;
     text-align: center;
 }
 
 .paragraph {
     margin: 10px 0;
     font-size: 1rem;
+}
+
+.astartes {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../public/assets/images/astartes/astartes2.png');  /* made with midjourney */
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: left;
+    opacity: 0.5;
 }

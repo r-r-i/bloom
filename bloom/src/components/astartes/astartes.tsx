@@ -8,30 +8,16 @@
 
 // Modules
 import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
 // Models
 // Components
 // CSS
 import './astartes.css';
 // Services
 
-const AstartesModel = () => {
-    const { scene } = useGLTF('/assets/models/astartes/scene.gltf');
-
-    return scene ? <primitive object={scene} scale={3} position={[0, -2, 0.5]} /> : null;
-};
-
 const Astartes: React.FC = () => {
     return (
         <>
-            <Canvas
-                className="canvas"
-                camera={{ position: [0, 0.3, 2], fov: 8 }}
-            >
-                <directionalLight color={'white'} intensity={0.05} position={[0, -5, 5]} />
-                <AstartesModel />
-            </Canvas>
+            <div className='astartes'></div>
             <div className="centered-text">
                 <p className="paragraph">It is the 41st millennium. Ten thousand years ago, the Emperor of Mankind launched the Great Crusade, reconquering the galaxy in humanity's name and establishing his interstellar Imperium.
                 However, those old days of might and glory are long gone. A civil war broke out between the Emperor and his favourite son, Horus, bringing mankind and the galaxy itself to the brink of destruction,
@@ -42,7 +28,7 @@ const Astartes: React.FC = () => {
                 His eternal glory. </p>
                 <p className="paragraph">One of the most powerful force in the Imperium, is the legendary Adeptus Astartes, the Emperor's own Angels of Death. To the common populace of the Imperium, they are known as the Space
                 Marines. Once humans, now demigods of the battlefield, genetically altered with added organs and implants, raised and trained to be warriors who know no fear, no remorse, and no fatigue. Clad in majestic
-                power armour, proudly baring the markings of their chapters, they wield a deadly arsenal that even the darkest horrors lurking in the depts of the galaxy cannot stand against.</p>
+                power armour, proudly baring the markings of their chapters, they wield a deadly arsenal that even the darkest horrors lurking in the depths of the galaxy cannot stand against.</p>
                 <p className="paragraph">Twenty legions there once were.
                 Out of these, small chapters gradually arose and disappeared, among them the direct descendant of the First Legion, the Dark Angels. Brave, proud and unrelenting, they pursue their goals whatever the cost 
                 may be.</p>
